@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section {
+            display: flex;
+            background-color: #6d6360;
+            flex-wrap: wrap;
+
+        }
+
+        .column-one {
+            background-color: #71d5b5;
+            padding: none;
+            margin: 25px;
+            width: 47%;
+            height: 800px;
+        }
+
+        .column-two {
+            background-color: #6d6360;
+            padding: none;
+            margin: 25px;
+            width: 47%;
+            height: 800px;
+        }
+
+        .first-line {
+            background-color: #71d5b5;
+            padding: none;
+            margin: none;
+            width: 100%;
+            height: 250px;
+        }
+
+        .second-line {
+            background-color: #6d6360;
+            padding: none;
+            margin: 25px 20px 25px 0px;
+            width: 100%;
+            height: 250px;
+            display: flex;
+            width: calc(100% / 1)
+        }
+
+        .first-box {
+            background-color: #71d5b5;
+            width: 50%;
+            height: 250px;
+            margin: 0px 10px 0px 0px;
+        }
+
+        .second-box {
+            background-color: #71d5b5;
+            width: 50%;
+            height: 250px;
+            margin: 0px 0px 0px 10px;
+        }
+
+        .third-line {
+            background-color: #71d5b5;
+            padding: none;
+            margin: none;
+            width: 100%;
+            height: 250px;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="column-one"></div>
+        <div class="column-two">
+            <div class="first-line"></div>
+            <div class="second-line">
+                <div class="first-box"></div>
+                <div class="second-box"></div>
+            </div>
+            <div class="third-line"></div>
+        </div>
+    </section>
+</body>
+
+</html>
