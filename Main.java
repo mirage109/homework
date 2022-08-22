@@ -1,10 +1,15 @@
 public class Main {
+    //Используя знания об операторе IF, напишите программу, которая выводит на экран большее из 3 чисел. Числа заданы в виде переменных num1, num2, num3.
     public static void main(String[] args) {
-        double first = 15.5;
-        double second = 22.3;
-        System.out.println("Сумма чисел 15.5 и 22.3 будет "+ (first+second));
-        System.out.println("Реультат вычитания чисел 15.5 и 22.3 будет "+ String.format("%5.2f",(first-second)));
-        System.out.println("Реультат умножения чисел 15.5 и 22.3 будет "+ String.format("%5.2f",(first*second)));
-        System.out.println("Реультат деления чисел 15.5 и 22.3 будет"+ String.format("%5.2f",(first/second)));
+        int num1 = 50;
+        int num2 = 60;
+        int num3 = 70;
+        if (num1 > num2 & num1 > num3) {
+            System.out.println("Самое большое число " + num1);
+        } else if (num2 > num1 & num2 > num3) {
+            System.out.println("Самое большое число " + num2);
+        } else {
+            System.out.println("Самое большое число " + num3);
+        }
     }
 }
