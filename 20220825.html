@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Youami</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+      body {
+        background: #2d273d;
+        font-family: "Lato", sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0;
+      }
+
+      .wrapper {
+        width: 1100px;
+        height: calc(1100px / 3 * 2);
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .block {
+        width: calc(100% / 3);
+        height: calc(100% / 2);
+        padding: 40px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      .block--purple {
+        background: #303297;
+      }
+      .block--red {
+        background: #ff4d4f;
+      }
+      .block--blue {
+        background: #2a79ff;
+      }
+      .block--black {
+        background: #2a272b;
+      }
+      .block--white {
+        background: #fff;
+      }
+
+      .block__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        margin-bottom: 40px;
+      }
+
+      .block__logo,
+      .block__subtitle {
+        font-size: 1rem;
+        margin: 0mm;
+      }
+
+      .block__logo,
+      .block__title {
+        color: #fff;
+      }
+
+      .block__logo--black,
+      .block__title--black {
+        color: black;
+      }
+
+      .block__subtitle,
+      .block__tags {
+        color: rgb(202, 193, 193);
+        font-size: 0.75rem;
+      }
+
+      .block__subtitle {
+        font-weight: 400;
+      }
+
+      .is-uppercase {
+        text-transform: uppercase;
+      }
+      .block__title {
+        margin: 10px 0;
+        font-size: 2.2rem;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="block block--purple">
+        <div class="block__content">
+          <div class="block__header">
+            <h2 class="block__logo">youami</h2>
+            <h2 class="block__subtitle is-uppercase">cashier app</h2>
+          </div>
+          <div class="block__desc">
+            <h2 class="block__subtitle is-uppercase">getting started</h2>
+            <h1 class="block__title">What type of bussines should I choose?</h1>
+            <h2 class="block__subtitle">1 of 10</h2>
+          </div>
+        </div>
+        <div class="block__tags"># our favorite questions</div>
+      </div>
+
+      <div class="block block--red">
+        <div class="block__content">
+          <div class="block__header">
+            <h2 class="block__logo">youami</h2>
+            <h2 class="block__subtitle is-uppercase">personal account</h2>
+          </div>
+          <div class="block__desc">
+            <h2 class="block__subtitle is-uppercase">getting started</h2>
+            <h1 class="block__title">Pay conveniently with credit card</h1>
+            <h2 class="block__subtitle">1 of 10</h2>
+          </div>
+        </div>
+        <div class="block__tags"># better every day</div>
+      </div>
+
+      <div class="block block--purple">
+        <div class="block__content">
+          <div class="block__header">
+            <h2 class="block__logo">youami</h2>
+            <h2 class="block__subtitle is-uppercase">cashier app</h2>
+          </div>
+          <div class="block__desc">
+            <h2 class="block__subtitle is-uppercase">getting started</h2>
+            <h1 class="block__title">How to turn off the TV correctly?</h1>
+            <h2 class="block__subtitle">1 of 10</h2>
+          </div>
+        </div>
+        <div class="block__tags"># our favorite questions</div>
+      </div>
+
+      <div class="block block--blue">
+        <div class="block__content">
+          <div class="block__header">
+            <h2 class="block__logo">youami</h2>
+            <h2 class="block__subtitle is-uppercase">perosnal account</h2>
+          </div>
+          <div class="block__desc">
+            <h2 class="block__subtitle is-uppercase">getting started</h2>
+            <h1 class="block__title">Where do you find fresh underwear?</h1>
+            <h2 class="block__subtitle">1 of 10</h2>
+          </div>
+        </div>
+        <div class="block__tags"># our favorite questions</div>
+      </div>
+
+      <div class="block block--black">
+        <div class="block__content">
+          <div class="block__header">
+            <h2 class="block__logo">youami</h2>
+            <h2 class="block__subtitle is-uppercase">cashier app</h2>
+          </div>
+          <div class="block__desc">
+            <h2 class="block__subtitle is-uppercase">getting started</h2>
+            <h1 class="block__title">Do I even need to label my goods?</h1>
+            <h2 class="block__subtitle">1 of 10</h2>
+          </div>
+        </div>
+        <div class="block__tags"># our favorite questions</div>
+      </div>
+
+      <div class="block block--white">
+        <div class="block__content">
+          <div class="block__header">
+            <h2 class="block__logo block__logo--black">youami</h2>
+            <h2 class="block__subtitle is-uppercase">perosnal account</h2>
+          </div>
+          <div class="block__desc">
+            <h2 class="block__subtitle is-uppercase">What's new</h2>
+            <h1 class="block__title block__title--black">
+              What type of bussines should I choose?
+            </h1>
+            <h2 class="block__subtitle">1 of 10</h2>
+          </div>
+        </div>
+        <div class="block__tags"># our favorite questions</div>
+      </div>
+    </div>
+  </body>
+</html>
