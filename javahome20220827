@@ -13,8 +13,8 @@ public class Main {
                 System.out.println(num1);
                 num1 = num1 + 1;
             }
-        } else if (num2 < num1) {
-            while (num2 < num1){
+        } else if (num2 <= num1) {
+            while (num2 <= num1){
                 System.out.println(num2);
                 num2 = num2 + 1;
             }
