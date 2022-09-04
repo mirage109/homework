@@ -4,14 +4,18 @@ public class Main {
         //           	3 -> 1
         //           	343 -> 3
         //           	98761 -> 5
-        int num1 = 1;
-        int num2 = 10;
-        int num3 = 98761;
-        int num4 = 0;
-        while (num1 <= num3) {
-            num1 *= num2;
-            num4 += 1;
+        int power = 1;
+        int base = 10;
+        int input = -98761;
+        int count = 0;
+        int x = input;
+        if (x < 0) {
+            x = -x;
         }
-        System.out.println("Количество розрядов в числе "+ num3 + " равно - "+ num4);
+        while (power <= x) {
+            power *= base;
+            count += 1;
+        }
+        System.out.println("Количество розрядов в числе " + input + " равно - " + count);
     }
 }
