@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .wrapper {
+        background: #d0d0d0;
+        color: white;
+        height: 100vh;
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 7rem;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-align: center;
+      }
+   
+      nav {
+        background: #ff7676;
+        width: calc(40% - 20px);
+        height: 70vh;
+        margin: 10px;
+        line-height: 35vh;
+      
+      }
+      .wrapper__section {
+        width: calc(60% - 20px);
+        height: 70vh;
+        margin: 10px;
+       
+      }
+      header {
+        background: #c2ff76;
+        height: 30vh;
+        line-height: 35vh;
+      }
+      main {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      article {
+        background: #ff9bf7;
+        height: calc(40vh-20px);
+        width: 50%;
+        margin: 20px 0px 0px 0px;
+        line-height: 35vh;
+      }
+      .wrapper__aside {
+        width: 50%;
+        line-height: 15vh;
+      }
+      aside {
+        background: #9ba4ff;
+        height: calc(40vh / 2 - 20px);
+        margin: 20px 0px 0px 10px;
+      }
+      @media (max-width:414px){
+        body{
+            background-color:#d0d0d0 ;
+        }
+        nav{
+            width: 100%;
+            height: 20%;
+            line-height: 4%;
+        }
+        .wrapper__section{
+            width: 100%;
+        }
+        main{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+        article{
+            width: 100%;
+        }
+        .wrapper__aside{
+            width: 100%;
+        }
+        aside{
+            margin: 10px 0px 0px 0px;
+        }
+      }
+        
+      
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <nav><p>1</p></nav>
+      <div class="wrapper__section">
+        <header>2</header>
+        <main>
+          <article>3</article>
+          <div class="wrapper__aside">
+            <aside>4a</aside>
+            <aside>4b</aside>
+          </div>
+        </main>
+      </section>
+    </div>
+  </body>
+</html>
